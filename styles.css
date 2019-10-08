@@ -59,8 +59,6 @@ h1 {
   order: 1;
 }
 
-/* grid fyrir >= 1000px */
-
 @media (min-width: 1000px) {
   .grid__row {
     flex-direction: row;
@@ -74,7 +72,6 @@ h1 {
   }
 }
 
-/* TODO setja upp grid fyrir >= 1000px */
 
 /* TODO koma mynd fyrir á öðrum stað í < 1000px */
 
