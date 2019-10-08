@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
+  font-size: 16px;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1450px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* TODO taka ætti padding af main þegar komið er fyrir ofan hámarksbreidd */
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.text {
+  margin-bottom: 20px;
+}
+
+.text p {
+  margin-bottom: 20px;
+}
+
+.image {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+/* grid fyrir efni, setja þarf upp í html */
+
+.grid__row {
+  display: flex;
+  flex-direction: column;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.grid__col {
+  width: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/* TODO setja upp grid fyrir >= 1000px */
+
+/* TODO koma mynd fyrir á öðrum stað í < 1000px */
+
+/* grid fyrir cards */
+
+.card_heading{
+  font-size: 24px;
+  line-height: 24px;
+  word-break: break-word;
+  padding: 15px;
+}
+
+.card_main_text{
+  font-size: 16px;
+  line-height: 20px;
+  word-break: break-word;
+  display: flex;
+  margin: auto;
+  flex: 1;
+  padding: 15px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  background-color: #fff;
+  border: 2px solid;
+  border-radius: 5px;
+  border-color: #aaa;
+  max-height: 320px;
+  max-width: 470px;
+  margin-bottom: 10px;   
+  overflow-wrap: break-word;
+  overflow: auto;
+}
+
+.card_image {
+	width: 150px;
+    height: 100px;
+    padding: 8px 15px 8px 8px;	
+}
+
+.card_points {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-left: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.card_point {
+    margin-right: 1rem;
+    font-weight: bold;
+}
+.container{
+	font-size: 1em;
+	line-height: 20px;
+	display: flex;
+	margin: auto;
+	padding: 15px;
+	flex-wrap: no-wrap;
+	flex-direction: row;
+	justify-content: space-around;
+	flex: 1;
+	min-width: 500px;
+}
+
+
+
+
