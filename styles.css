@@ -38,6 +38,8 @@ h1 {
 .image {
   max-width: 100%;
   margin-bottom: 20px;
+  min-width: 700px;
+  margin: ;
 }
 
 /* grid fyrir efni, setja þarf upp í html */
@@ -71,11 +73,8 @@ h1 {
 .card_main_text{
   font-size: 16px;
   line-height: 20px;
-  word-break: break-word;
-  display: flex;
-  margin: auto;
+  margin;
   flex: 1;
-  padding: 15px;
 }
 
 .cards {
@@ -122,11 +121,13 @@ h1 {
 	padding: 15px;
 	flex-wrap: no-wrap;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: stretch;
 	flex: 1;
-	min-width: 500px;
+	min-width: 500fpx;
 }
-
+.main_pictures {
+	padding-left: 2em;
+}
 
 
 
