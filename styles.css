@@ -38,8 +38,6 @@ h1 {
 .image {
   max-width: 100%;
   margin-bottom: 20px;
-  min-width: 700px;
-  margin: ;
 }
 
 /* grid fyrir efni, setja þarf upp í html */
@@ -55,6 +53,25 @@ h1 {
   width: 100%;
   padding-right: 10px;
   padding-left: 10px;
+}
+
+.grid__row:nth-child(2) .grid__col:first-child {
+  order: 1;
+}
+
+/* grid fyrir >= 1000px */
+
+@media (min-width: 1000px) {
+  .grid__row {
+    flex-direction: row;
+  }
+  .grid__col {
+    width: 50%;
+    margin-bottom: 2.5rem;
+  }
+.grid__row:nth-child(2) .grid__col:first-child {
+    order: 0;
+  }
 }
 
 /* TODO setja upp grid fyrir >= 1000px */
@@ -117,16 +134,15 @@ h1 {
 	font-size: 1em;
 	line-height: 20px;
 	display: flex;
-	margin: auto;
-	padding: 15px;
-	flex-wrap: no-wrap;
+	flex-wrap: flex-flow;
 	flex-direction: row;
 	justify-content: stretch;
 	flex: 1;
-	min-width: 500fpx;
+
 }
 .main_pictures {
 	padding-left: 2em;
+	
 }
 
 
